@@ -2,7 +2,9 @@ import humod
 import time
 
 class Modem(humod.Modem):
-	
+	"""
+		upper level wrapper of pyhumod.
+	"""
 	def __init__(self, DATA_PORT = '/dev/ttyUSB0', CONTROL_PORT = '/dev/ttyUSB1'):
 		humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
 		self.enable_textmode(True)
