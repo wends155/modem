@@ -1,12 +1,15 @@
-import humod
+import lib.humod 
 import time
+import re
 
-class Modem(humod.Modem):
+class Modem(lib.humod.Modem):
 	"""
 		upper level wrapper of pyhumod.
 	"""
+	pattern = '^(\+63|0)(\d+)'
+
 	def __init__(self, DATA_PORT = '/dev/ttyUSB0', CONTROL_PORT = '/dev/ttyUSB1'):
-		humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
+		lib.humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
 		self.enable_textmode(True)
 		
 	def unread(self):
@@ -19,12 +22,22 @@ class Modem(humod.Modem):
 	def sms_msgs(self, status='ALL'):
 		msgs = []
 		for msg in self.sms_list(status):
-			number = msg[2]
+			number = self._sender(msg[2])
 			message = self.sms_read(msg[0])
-			msg_index = int(msg[0])
+			index = int(msg[0])
 			sms_time = self._time(msg[4])
 			sms_status = msg[1]
 			
-			pack = {'msg_index':msg_index, 'status':sms_status, 'sender':number, 'message':message,'time':sms_time}
+			pack = {'index':index, 'status':sms_status, 'sender':number, 'message':message,'time':sms_time}
 			msgs.append(pack)
 		return msgs
+	
+	def _sender(self,sender):
+		matcher = re.compile(self.pattern)
+		match = matcher.search(sender).groups()[1]
+		return '0' + match
+
+	def sms_clear(self):
+		for msg in self.sms_list():
+			self.sms_del(msg[0])
+
