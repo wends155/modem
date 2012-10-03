@@ -1,12 +1,15 @@
 import lib.humod 
+import lib.humod.errors
 import time
 import re
+import simplejson as json
 
 class Modem(lib.humod.Modem):
 	"""
 		upper level wrapper of pyhumod.
 	"""
 	pattern = '^(\+63|0)(\d+)'
+	_observers = []
 
 	def __init__(self, DATA_PORT = '/dev/ttyUSB0', CONTROL_PORT = '/dev/ttyUSB1'):
 		lib.humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
@@ -34,10 +37,31 @@ class Modem(lib.humod.Modem):
 	
 	def _sender(self,sender):
 		matcher = re.compile(self.pattern)
-		match = matcher.search(sender).groups()[1]
-		return '0' + match
+		match = matcher.search(sender)
+		if match:
+			match = match.groups()[1]
+			return '0' + match
+		else: 
+			return sender
 
 	def sms_clear(self):
 		for msg in self.sms_list():
 			self.sms_del(msg[0])
 
+	def register(self,fn):
+		self._observers.append(fn)
+
+	def run(self):
+		while True:
+			for msg in self.unread():
+
+				for fn in self._observers:
+					fn(json.dumps(msg)) 
+				self.sms_del(msg['index'])
+			time.sleep(0.5)
+
+	def balance(self):
+		try:
+			self.sms_send('214','?15001')
+		except lib.humod.errors.AtCommandError:
+			print "error"
