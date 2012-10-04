@@ -45,6 +45,9 @@ class Gateway(object):
 		while True:
 			msg = self.__sub.recv_string()
 			print msg
+			if msg is unicode:
+				msg = msg.encode()
+				
 			self.message_queue.put_nowait(msg)
 			gevent.sleep(0.2)
 
