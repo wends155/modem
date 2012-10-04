@@ -16,10 +16,10 @@ import threading
 import Queue
 import time
 import os
-from humod import errors
-from humod import actions
-from humod import defaults
-from humod import at_commands as atc
+import errors
+import actions
+import defaults
+import at_commands as atc
 
 
 class Interpreter(threading.Thread):
