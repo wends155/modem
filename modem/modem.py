@@ -1,8 +1,7 @@
 import lib.humod 
-import lib.humod.errors
+from lib.humod.errors import AtCommandError
 import time
 import re
-import simplejson as json
 
 class Modem(lib.humod.Modem):
 	"""
@@ -16,13 +15,13 @@ class Modem(lib.humod.Modem):
 		self.enable_textmode(True)
 		
 	def unread(self):
-		return self.sms_msgs('REC UNREAD')
+		return self.sms_msglist('REC UNREAD')
 		
 	def _time(self,sms_time):
 		t = time.strptime(sms_time, '%y/%m/%d,%H:%M:%S+32')
 		return time.mktime(t)
 	
-	def sms_msgs(self, status='ALL'):
+	def sms_msglist(self, status='ALL'):
 		msgs = []
 		for msg in self.sms_list(status):
 			number = self._sender(msg[2])
@@ -35,6 +34,9 @@ class Modem(lib.humod.Modem):
 			msgs.append(pack)
 		return msgs
 	
+	def sms_msg(self,index):
+		return self.sms_msglist()[index]
+
 	def _sender(self,sender):
 		matcher = re.compile(self.pattern)
 		match = matcher.search(sender)
@@ -48,18 +50,7 @@ class Modem(lib.humod.Modem):
 		for msg in self.sms_list():
 			self.sms_del(msg[0])
 
-	def register(self,fn):
-		self._observers.append(fn)
-
-	def run(self):
-		while True:
-			for msg in self.unread():
-
-				for fn in self._observers:
-					fn(json.dumps(msg)) 
-				self.sms_del(msg['index'])
-			time.sleep(0.5)
-
+		
 	def balance(self):
 		try:
 			self.sms_send('214','?15001')
