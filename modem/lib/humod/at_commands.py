@@ -12,7 +12,7 @@
 __author__ = 'Slawek Ligus <root@ooz.ie>'
 
 import re
-import humod.errors as errors
+import errors
 from warnings import warn
 
 # Deprecated decorator.
