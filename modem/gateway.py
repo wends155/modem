@@ -16,11 +16,22 @@ class Gateway(object):
 		self.__modem = modem
 
 		settings = {
-			'push' : 'tcp://*:5555',
-			'sub'  : 'tcp://*:5556'
+			'server': "*",
+			'push_port' : '5555',
+			'sub_port'  : '5556',
+			'outbox_port': '5557',
+			'subscribe_topic' : ""
 		}
 		settings.update(kwargs)
-				
+
+		server = {
+			'push' : "tcp://%s:%s" % (settings['server'],settings['push_port']),
+			'sub' : "tcp://%s:%s" % (settings['server'],settings['sub_port']),
+			'outbox' : "tcp://%s:%s" % (settings['server'],settings['outbox_port'])
+		}
+		settings.update(server)
+		self.server = settings['server']
+
 		self.ctx = zmq.Context()
 
 		self.__push = self.ctx.socket(zmq.PUSH)
@@ -28,8 +39,11 @@ class Gateway(object):
 
 		self.__sub = self.ctx.socket(zmq.SUB)
 		self.__sub.connect(settings['sub'])
-		self.__sub.setsockopt(zmq.SUBSCRIBE,"")
- 
+		self.__sub.setsockopt(zmq.SUBSCRIBE,settings['subscribe_topic'])
+ 		
+ 		self.__outbox = self.ctx.socket(zmq.PUSH)
+ 		self.__outbox.connect(settings['outbox'])
+
 		self.__queue = Queue()
 
 	def recv(self):
@@ -47,31 +61,33 @@ class Gateway(object):
 			print msg
 			if msg is unicode:
 				msg = msg.encode()
-				
+
 			self.message_queue.put_nowait(msg)
 			gevent.sleep(0.2)
 
-	def sms_send(self,number,message):
-		try:
-			self.__modem.sms_send(number,message)
-		except modem.AtCommandError:
-			print 'ATCommandError'
+	def send_outbox(self,msgpack):
+		print "type: %s, msg: %s" % (type(msgpack),msgpack)
+		self.__outbox.send_string(msgpack)
 
 	def send(self):
 		while True:
 			if not self.message_queue.empty():
 				msg = self.message_queue.get()
-				msg = json.loads(msg)
+				msg_dict = json.loads(msg)
 
-				number = msg['number']
-				message = msg['message']
-				gevent.spawn(self.sms_send,number,message)
-
+				number = msg_dict['number']
+				message = msg_dict['message']
+				#gevent.spawn(self.sms_send,number,message)
+				try: 
+					self.__modem.sms_send(number,message)
+					print "sent"
+				except modem.AtCommandError:
+					gevent.spawn(self.send_outbox,msg)
 			gevent.sleep(0.2)
 
 	def run(self):
 		work = [gevent.spawn(self.recv),gevent.spawn(self.queue),gevent.spawn(self.send)]
-		print 'starting work'
+		print "connecting to: %s" % (self.server)
 		gevent.joinall(work)
 	
 	
