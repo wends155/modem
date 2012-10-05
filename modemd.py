@@ -15,7 +15,7 @@ class ModemDaemon(GeventDaemon):
 
 			
 		except SystemExit:
-			logging.error("%s: Gateway Error, exiting" % time.strftime("%d%b%Y,%H:%M"))
+			logging.error("%s: Gateway SIGTERM, exiting" % time.strftime("%d%b%Y,%H:%M"))
 			sys.exit(0)
 
 		except:
