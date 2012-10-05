@@ -1,10 +1,10 @@
 #!/usr/bin/python
-from modem.lib.daemon import Daemon
+from modem.lib.geventdaemon import GeventDaemon
 import sys
 import logging
 logging.basicConfig(filename='gateway.log',level=logging.INFO)
 
-class ModemDaemon(Daemon):
+class ModemDaemon(GeventDaemon):
 	def run(self, **kwargs):
 		import sys
 		from modem import Gateway
@@ -13,9 +13,7 @@ class ModemDaemon(Daemon):
 			gate = Gateway(**kwargs)
 			gate.run()
 
-			import signal
 			
-
 		except SystemExit:
 			logging.error("%s: Gateway Error, exiting" % time.strftime("%d%b%Y,%H:%M"))
 			sys.exit(0)
