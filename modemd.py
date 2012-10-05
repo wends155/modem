@@ -28,8 +28,10 @@ class ModemDaemon(Daemon):
 
 if __name__ == "__main__":
 	import time
-	print sys.argv
 	logging.info("%s: Starting Gateway" % (time.strftime("%d%b%Y,%H:%M")) )
 
 	mydaemon = ModemDaemon('modem.pid')
-	mydaemon.start()
+	if len(sys.argv) > 1:
+		mydaemon.start(server=sys.argv[1])
+	else: 
+		mydaemon.start(server="*")
