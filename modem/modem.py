@@ -2,6 +2,10 @@ import lib.humod
 from lib.humod.errors import AtCommandError
 import time
 import re
+import logging
+
+def gettime():
+	return time.strftime("%d%b%Y,%H:%M")
 
 class Modem(lib.humod.Modem):
 	"""
@@ -11,9 +15,16 @@ class Modem(lib.humod.Modem):
 	_observers = []
 
 	def __init__(self, DATA_PORT = '/dev/ttyUSB0', CONTROL_PORT = '/dev/ttyUSB1'):
-		lib.humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
-		self.enable_textmode(True)
-		
+		from serial.serialutil import SerialException
+		import sys
+
+		try:
+			lib.humod.Modem.__init__(self, DATA_PORT, CONTROL_PORT)
+			self.enable_textmode(True)
+		except: 
+			logging.error("%s: No modem connected" % (gettime()) )
+			sys.exit(1) #or raise SystemExit() ---todo
+
 	def unread(self):
 		return self.sms_msglist('REC UNREAD')
 		
@@ -54,5 +65,5 @@ class Modem(lib.humod.Modem):
 	def balance(self):
 		try:
 			self.sms_send('214','?15001')
-		except lib.humod.errors.AtCommandError:
-			print "error"
+		except AtCommandError:
+			loggin.warning("sms not sent AtCommandError, rssi: %s" % (self.get_rssi()))

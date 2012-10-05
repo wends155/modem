@@ -1,20 +1,25 @@
-from gevent import monkey
-monkey.patch_all()
+import gevent.monkey
+gevent.monkey.patch_time()
 
 import modem
 import gevent
 from gevent_zeromq import zmq
 import simplejson as json
 from gevent.queue import Queue
+import logging
+import time
+import signal
+import sys
+
 
 class Gateway(object):
 	
-	message_queue = Queue()
-
-	def __init__(self,modem,**kwargs):
+	def __init__(self,mod=None,**kwargs):
 		
-		self.__modem = modem
-
+		
+		self.__modem = mod or modem.Modem()
+		self.message_queue = Queue()
+		
 		settings = {
 			'server': "*",
 			'push_port' : '5555',
@@ -46,7 +51,9 @@ class Gateway(object):
 
 		self.__queue = Queue()
 
+				
 	def recv(self):
+		logging.info("%s Gateway recv starting." % time.strftime("%d%b%Y,%H:%M"))
 		while True:
 			for msg in self.__modem.unread():
 				pack_str = json.dumps(msg)
@@ -56,20 +63,22 @@ class Gateway(object):
 			gevent.sleep(0.2)
 
 	def queue(self):
+		logging.info("%s: Gateway queue starting." % time.strftime("%d%b%Y,%H:%M"))
 		while True:
 			msg = self.__sub.recv_string()
-			print msg
-			if msg is unicode:
+			#print type(msg)
+			if type(msg) is unicode:
 				msg = msg.encode()
 
 			self.message_queue.put_nowait(msg)
 			gevent.sleep(0.2)
 
 	def send_outbox(self,msgpack):
-		print "type: %s, msg: %s" % (type(msgpack),msgpack)
+		logging.info("%s: sending message to outbox." % time.strftime("%d%b%Y,%H:%M") )
 		self.__outbox.send_string(msgpack)
 
 	def send(self):
+		logging.info("%s: Gateway send starting." % time.strftime("%d%b%Y,%H:%M"))
 		while True:
 			if not self.message_queue.empty():
 				msg = self.message_queue.get()
@@ -80,14 +89,22 @@ class Gateway(object):
 				#gevent.spawn(self.sms_send,number,message)
 				try: 
 					self.__modem.sms_send(number,message)
-					print "sent"
+					
 				except modem.AtCommandError:
+					logging.warning("%s: sms not sent AtCommandError, rssi: %s" %(time.strftime("%d%b%Y,%H:%M"),self.__modem.get_rssi()))
 					gevent.spawn(self.send_outbox,msg)
 			gevent.sleep(0.2)
 
+	def stop(self,signum,frame):
+		logging.info("%s Stopping." % time.strftime("%d%b%Y,%H:%M"))
+		gevent.killall(self.workers)
+		raise SystemExit("Exiting.")
+			
 	def run(self):
-		work = [gevent.spawn(self.recv),gevent.spawn(self.queue),gevent.spawn(self.send)]
-		print "connecting to: %s" % (self.server)
-		gevent.joinall(work)
+		gevent.signal(signal.SIGTERM,self.stop)
+		self.workers = [gevent.spawn(self.recv),gevent.spawn(self.queue),gevent.spawn(self.send)]
+		#print "connecting to: %s" % (self.server)
+		logging.info("%s: connecting to host: %s" % (time.strftime("%d%b%Y,%H:%M"),self.server))
+		gevent.joinall(self.workers)
 	
 	

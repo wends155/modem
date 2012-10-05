@@ -1,0 +1,9 @@
+INFO:root:05Oct2012,15:23: Starting Gateway
+ERROR:root:05Oct2012,15:23: No modem connected
+ERROR:root:05Oct2012,15:23: Gateway Error, exiting
+INFO:root:05Oct2012,15:24: Starting Gateway
+INFO:root:05Oct2012,15:24: connecting to host: *
+INFO:root:05Oct2012,15:24 Gateway recv starting.
+INFO:root:05Oct2012,15:24: Gateway queue starting.
+INFO:root:05Oct2012,15:24: Gateway send starting.
+ERROR:root:05Oct2012,15:25: Gateway Error, exiting
