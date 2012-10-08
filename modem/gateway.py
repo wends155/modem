@@ -3,7 +3,8 @@ gevent.monkey.patch_time()
 
 import modem
 import gevent
-from gevent_zeromq import zmq
+import zmq.green as zmq
+#from gevent_zeromq import zmq
 import simplejson as json
 from gevent.queue import Queue
 import logging

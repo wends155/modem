@@ -75,3 +75,68 @@ INFO:root:07Oct2012,09:42: connecting to host: *
 INFO:root:07Oct2012,09:42 Gateway recv starting.
 INFO:root:07Oct2012,09:42: Gateway queue starting.
 INFO:root:07Oct2012,09:42: Gateway send starting.
+INFO:root:08Oct2012,10:21: Starting Gateway
+INFO:root:08Oct2012,10:21: connecting to host: *
+INFO:root:08Oct2012,10:21 Gateway recv starting.
+INFO:root:08Oct2012,10:21: Gateway queue starting.
+INFO:root:08Oct2012,10:21: Gateway send starting.
+WARNING:root:08Oct2012,10:30: sms not sent AtCommandError, rssi: 16
+INFO:root:08Oct2012,10:30: sending message to outbox.
+WARNING:root:08Oct2012,10:31: sms not sent AtCommandError, rssi: 12
+INFO:root:08Oct2012,10:31: sending message to outbox.
+WARNING:root:08Oct2012,10:33: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,10:33: sending message to outbox.
+WARNING:root:08Oct2012,10:36: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,10:36: sending message to outbox.
+WARNING:root:08Oct2012,10:37: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,10:37: sending message to outbox.
+WARNING:root:08Oct2012,10:39: sms not sent AtCommandError, rssi: 15
+INFO:root:08Oct2012,10:39: sending message to outbox.
+WARNING:root:08Oct2012,13:11: sms not sent AtCommandError, rssi: 16
+INFO:root:08Oct2012,13:11: sending message to outbox.
+WARNING:root:08Oct2012,13:13: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,13:13: sending message to outbox.
+WARNING:root:08Oct2012,13:14: sms not sent AtCommandError, rssi: 13
+INFO:root:08Oct2012,13:14: sending message to outbox.
+WARNING:root:08Oct2012,13:16: sms not sent AtCommandError, rssi: 16
+INFO:root:08Oct2012,13:16: sending message to outbox.
+INFO:root:08Oct2012,13:32: Starting Gateway
+INFO:root:08Oct2012,13:32: connecting to host: *
+INFO:root:08Oct2012,13:32 Gateway recv starting.
+INFO:root:08Oct2012,13:32: Gateway queue starting.
+INFO:root:08Oct2012,13:32: Gateway send starting.
+INFO:root:08Oct2012,13:32: Starting Gateway
+INFO:root:08Oct2012,13:32: connecting to host: *
+INFO:root:08Oct2012,13:32 Gateway recv starting.
+INFO:root:08Oct2012,13:32: Gateway queue starting.
+INFO:root:08Oct2012,13:32: Gateway send starting.
+WARNING:root:08Oct2012,13:36: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,13:36: sending message to outbox.
+WARNING:root:08Oct2012,13:40: sms not sent AtCommandError, rssi: 15
+INFO:root:08Oct2012,13:40: sending message to outbox.
+WARNING:root:08Oct2012,13:47: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,13:47: sending message to outbox.
+WARNING:root:08Oct2012,13:48: sms not sent AtCommandError, rssi: 14
+INFO:root:08Oct2012,13:48: sending message to outbox.
+INFO:root:08Oct2012,13:56: Starting Gateway
+INFO:root:08Oct2012,13:56: connecting to host: *
+INFO:root:08Oct2012,13:56 Gateway recv starting.
+INFO:root:08Oct2012,13:56: Gateway queue starting.
+INFO:root:08Oct2012,13:56: Gateway send starting.
+WARNING:root:08Oct2012,14:21: sms not sent AtCommandError, rssi: 15
+INFO:root:08Oct2012,14:21: sending message to outbox.
+INFO:root:08Oct2012,15:04: Starting Gateway
+INFO:root:08Oct2012,15:04: connecting to host: *
+INFO:root:08Oct2012,15:04 Gateway recv starting.
+INFO:root:08Oct2012,15:04: Gateway queue starting.
+INFO:root:08Oct2012,15:04: Gateway send starting.
+INFO:root:08Oct2012,17:50: Starting Gateway
+INFO:root:08Oct2012,17:51: Starting Gateway
+ERROR:root:08Oct2012,17:51: No modem connected
+ERROR:root:08Oct2012,17:51: Gateway SIGTERM, exiting
+INFO:root:08Oct2012,17:52: Starting Gateway
+ERROR:root:08Oct2012,17:52: No modem connected
+ERROR:root:08Oct2012,17:52: Gateway SIGTERM, exiting
+INFO:root:08Oct2012,18:05: Starting Gateway
+ERROR:root:08Oct2012,18:05: No modem connected
+ERROR:root:08Oct2012,18:05: Gateway SIGTERM, exiting
