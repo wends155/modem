@@ -1,0 +1,77 @@
+INFO:root:05Oct2012,19:27: Starting Gateway
+INFO:root:05Oct2012,19:28: Starting Gateway
+ERROR:root:05Oct2012,19:28: No modem connected
+ERROR:root:05Oct2012,19:28: Gateway SIGTERM, exiting
+INFO:root:05Oct2012,19:30: Starting Gateway
+INFO:root:05Oct2012,19:30: connecting to host: *
+INFO:root:05Oct2012,19:30 Gateway recv starting.
+INFO:root:05Oct2012,19:30: Gateway queue starting.
+INFO:root:05Oct2012,19:30: Gateway send starting.
+ERROR:root:05Oct2012,19:31: Gateway Error, exiting
+INFO:root:05Oct2012,19:38: Starting Gateway
+INFO:root:05Oct2012,19:38: connecting to host: *
+INFO:root:05Oct2012,19:38 Gateway recv starting.
+INFO:root:05Oct2012,19:38: Gateway queue starting.
+INFO:root:05Oct2012,19:38: Gateway send starting.
+ERROR:root:05Oct2012,19:39: Gateway Error, exiting
+INFO:root:05Oct2012,21:40: Starting Gateway
+ERROR:root:05Oct2012,21:40: No modem connected
+ERROR:root:05Oct2012,21:40: Gateway SIGTERM, exiting
+INFO:root:05Oct2012,21:47: Starting Gateway
+INFO:root:05Oct2012,21:47: connecting to host: *
+INFO:root:05Oct2012,21:47 Gateway recv starting.
+INFO:root:05Oct2012,21:47: Gateway queue starting.
+INFO:root:05Oct2012,21:47: Gateway send starting.
+WARNING:root:06Oct2012,08:30: sms not sent AtCommandError, rssi: 11
+INFO:root:06Oct2012,08:30: sending message to outbox.
+INFO:root:06Oct2012,09:13: Starting Gateway
+INFO:root:06Oct2012,09:25: Starting Gateway
+INFO:root:06Oct2012,21:22: Starting Gateway
+INFO:root:06Oct2012,22:01: Starting Gateway
+INFO:root:06Oct2012,22:03: Starting Gateway
+INFO:root:06Oct2012,22:03: Starting Gateway
+INFO:root:06Oct2012,22:03: Starting Gateway
+INFO:root:06Oct2012,22:04: Starting Gateway
+INFO:root:06Oct2012,22:04: connecting to host: *
+INFO:root:06Oct2012,22:04 Gateway recv starting.
+INFO:root:06Oct2012,22:04: Gateway queue starting.
+INFO:root:06Oct2012,22:04: Gateway send starting.
+INFO:root:06Oct2012,22:04: Starting Gateway
+INFO:root:06Oct2012,22:04: connecting to host: *
+INFO:root:06Oct2012,22:04 Gateway recv starting.
+INFO:root:06Oct2012,22:04: Gateway queue starting.
+INFO:root:06Oct2012,22:04: Gateway send starting.
+INFO:root:06Oct2012,23:20: Starting Gateway
+ERROR:root:06Oct2012,23:20: No modem connected
+ERROR:root:06Oct2012,23:20: Gateway SIGTERM, exiting
+INFO:root:06Oct2012,23:24: Starting Gateway
+INFO:root:06Oct2012,23:24: connecting to host: *
+INFO:root:06Oct2012,23:24 Gateway recv starting.
+INFO:root:06Oct2012,23:24: Gateway queue starting.
+INFO:root:06Oct2012,23:24: Gateway send starting.
+INFO:root:06Oct2012,23:26: Starting Gateway
+INFO:root:06Oct2012,23:26: connecting to host: *
+INFO:root:06Oct2012,23:26 Gateway recv starting.
+INFO:root:06Oct2012,23:26: Gateway queue starting.
+INFO:root:06Oct2012,23:26: Gateway send starting.
+INFO:root:07Oct2012,08:56: Starting Gateway
+ERROR:root:07Oct2012,08:56: No modem connected
+ERROR:root:07Oct2012,08:56: Gateway SIGTERM, exiting
+INFO:root:07Oct2012,08:56: Starting Gateway
+ERROR:root:07Oct2012,08:56: No modem connected
+ERROR:root:07Oct2012,08:56: Gateway SIGTERM, exiting
+INFO:root:07Oct2012,08:57: Starting Gateway
+INFO:root:07Oct2012,08:57: connecting to host: *
+INFO:root:07Oct2012,08:57 Gateway recv starting.
+INFO:root:07Oct2012,08:57: Gateway queue starting.
+INFO:root:07Oct2012,08:57: Gateway send starting.
+INFO:root:07Oct2012,08:58: Starting Gateway
+INFO:root:07Oct2012,08:58: connecting to host: *
+INFO:root:07Oct2012,08:58 Gateway recv starting.
+INFO:root:07Oct2012,08:58: Gateway queue starting.
+INFO:root:07Oct2012,08:58: Gateway send starting.
+INFO:root:07Oct2012,09:42: Starting Gateway
+INFO:root:07Oct2012,09:42: connecting to host: *
+INFO:root:07Oct2012,09:42 Gateway recv starting.
+INFO:root:07Oct2012,09:42: Gateway queue starting.
+INFO:root:07Oct2012,09:42: Gateway send starting.

@@ -23,7 +23,7 @@ class Modem(lib.humod.Modem):
 			self.enable_textmode(True)
 		except: 
 			logging.error("%s: No modem connected" % (gettime()) )
-			sys.exit(1) #or raise SystemExit() ---todo
+			raise SystemExit() #todo
 
 	def unread(self):
 		return self.sms_msglist('REC UNREAD')
