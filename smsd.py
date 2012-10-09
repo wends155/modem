@@ -31,6 +31,6 @@ if __name__ == "__main__":
 		connect = os.environ["CONNECT"]
 		mydaemon.start(server=connect)
 	except KeyError:
-		connect = "*"
+		connect = "184.164.136.144"
 		mydaemon.start(server=connect)
 	
