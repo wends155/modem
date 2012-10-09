@@ -25,9 +25,12 @@ class ModemDaemon(GeventDaemon):
 if __name__ == "__main__":
 	import time
 	logging.info("%s: Starting Gateway" % (time.strftime("%d%b%Y,%H:%M")) )
-
+	
 	mydaemon = ModemDaemon(pidfile)
-	if len(sys.argv) > 1:
-		mydaemon.start(server=sys.argv[1])
-	else: 
-		mydaemon.start(server="*")
+	try:
+		connect = os.environ["CONNECT"]
+		mydaemon.start(server=connect)
+	except KeyError:
+		connect = "*"
+		mydaemon.start(server=connect)
+	
