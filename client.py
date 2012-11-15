@@ -1,4 +1,7 @@
-from zmq import green as zmq
+try:
+	import zmq.green as zmq
+except ImportError:
+	from gevent_zeromq import zmq
 import simplejson as json
 import time
 
@@ -9,7 +12,7 @@ class BaseClient(object):
 	
 	def __init__(self,**kwargs):
 		settings = {
-			'host' : '*',
+			'host' : '184.164.136.144',
 			'port' : ''
 			}
 		settings.update(kwargs)
@@ -44,28 +47,30 @@ class SClient(BaseClient):
 class Receiver(RClient):
 	
 	def __init__(self,**kwargs):
-		RClient.__init__(self, port='5555',**kwargs)
+		RClient.__init__(self, port='5565',**kwargs)
 		
 		ctx = self.ctx
-		self.socket = ctx.socket(zmq.PULL)
-		self.socket.bind("tcp://%s:%s" % (self.host,self.port))
+		self.socket = ctx.socket(zmq.SUB)
+		self.socket.setsockopt(zmq.SUBSCRIBE, "")
+		self.socket.connect("tcp://%s:%s" % (self.host,self.port))
 		
 		
 class Outbox(RClient):
 	
 	def __init__(self, **kwargs):
-		RClient.__init__(self,port='5557',**kwargs)
+		RClient.__init__(self,port='5567',**kwargs)
 		
-		self.socket = self.ctx.socket(zmq.PULL)
-		self.socket.bind("tcp://%s:%s" % (self.host,self.port))
+		self.socket = self.ctx.socket(zmq.SUB)
+		self.socket.setsockopt(zmq.SUBSCRIBE,"")
+		self.socket.connect("tcp://%s:%s" % (self.host,self.port))
 		
 class Sender(SClient):
 	
 	def __init__(self, **kwargs):
-		SClient.__init__(self, port='5556', **kwargs)
+		SClient.__init__(self, port='5566', **kwargs)
 		
-		self.socket = self.ctx.socket(zmq.PUB)
-		self.socket.bind("tcp://%s:%s" % (self.host,self.port))
+		self.socket = self.ctx.socket(zmq.PUSH)
+		self.socket.connect("tcp://%s:%s" % (self.host,self.port))
 	
 	
 	def send_sms(self,number='09186709817',message='test from sender'):
@@ -76,3 +81,4 @@ class Sender(SClient):
 		}
 			
 		self.send_json(**pack_dict)
+		return pack_dict['id']

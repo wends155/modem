@@ -3,8 +3,8 @@ from modem.lib.geventdaemon import GeventDaemon
 import sys
 import logging
 import os
-logfile = '/var/run/smsd/smsd.log'
-pidfile = '/var/run/smsd/smsd.pid'
+logfile = 'smsd.log'
+pidfile = 'smsd.pid'
 logging.basicConfig(filename=logfile,level=logging.INFO)
 
 class ModemDaemon(GeventDaemon):
