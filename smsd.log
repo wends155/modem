@@ -14,3 +14,56 @@ INFO:root:08Feb2013,10:00: connecting to host: 184.164.136.144
 INFO:root:08Feb2013,10:00 Gateway recv starting.
 INFO:root:08Feb2013,10:00: Gateway queue starting.
 INFO:root:08Feb2013,10:00: Gateway send starting.
+INFO:root:08Feb2013,10:09: Starting Gateway
+INFO:root:08Feb2013,10:09: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:09 Gateway recv starting.
+INFO:root:08Feb2013,10:09: Gateway queue starting.
+INFO:root:08Feb2013,10:09: Gateway send starting.
+INFO:root:08Feb2013,10:13: Starting Gateway
+INFO:root:08Feb2013,10:13: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:13 Gateway recv starting.
+INFO:root:08Feb2013,10:13: Gateway queue starting.
+INFO:root:08Feb2013,10:13: Gateway send starting.
+INFO:root:08Feb2013,10:13: message queued.
+INFO:root:08Feb2013,10:15: Starting Gateway
+INFO:root:08Feb2013,10:15: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:15 Gateway recv starting.
+INFO:root:08Feb2013,10:15: Gateway queue starting.
+INFO:root:08Feb2013,10:15: Gateway send starting.
+INFO:root:08Feb2013,10:15: message queued.
+INFO:root:08Feb2013,10:15: sending....
+INFO:root:08Feb2013,10:15: message queued.
+INFO:root:08Feb2013,10:15: sending....
+INFO:root:08Feb2013,10:15: message queued.
+INFO:root:08Feb2013,10:15: sending....
+INFO:root:08Feb2013,10:17: Starting Gateway
+INFO:root:08Feb2013,10:17: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:17 Gateway recv starting.
+INFO:root:08Feb2013,10:17: Gateway queue starting.
+INFO:root:08Feb2013,10:17: Gateway send starting.
+INFO:root:08Feb2013,10:17: message queued.
+INFO:root:08Feb2013,10:17: message queued.
+INFO:root:08Feb2013,10:18: Starting Gateway
+INFO:root:08Feb2013,10:18: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:18 Gateway recv starting.
+INFO:root:08Feb2013,10:18: Gateway queue starting.
+INFO:root:08Feb2013,10:18: Gateway send starting.
+INFO:root:08Feb2013,10:18: message queued.
+INFO:root:08Feb2013,10:18: dequeue: {"id":1360289923,"number":"09186709817","message":"test from php"}
+INFO:root:08Feb2013,10:18: sending....
+INFO:root:08Feb2013,10:19: message queued.
+INFO:root:08Feb2013,10:19: dequeue: {"id":1360289945,"number":"09186709817","message":"hello world"}
+INFO:root:08Feb2013,10:19: sending....
+INFO:root:08Feb2013,10:20: Starting Gateway
+INFO:root:08Feb2013,10:20: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:20 Gateway recv starting.
+INFO:root:08Feb2013,10:20: Gateway queue starting.
+INFO:root:08Feb2013,10:20: Gateway send starting.
+INFO:root:08Feb2013,10:20: message queued.
+INFO:root:08Feb2013,10:20: dequeue: {"id":1360290012,"number":"09186709817","message":"test from php"}
+INFO:root:08Feb2013,10:20: sending....
+INFO:root:08Feb2013,10:20: sent msg#: 1360290012
+INFO:root:08Feb2013,10:20: message queued.
+INFO:root:08Feb2013,10:20: dequeue: {"id":1360290036,"number":"09186709817","message":"hello world"}
+INFO:root:08Feb2013,10:20: sending....
+INFO:root:08Feb2013,10:20: sent msg#: 1360290036

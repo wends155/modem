@@ -72,6 +72,7 @@ class Gateway(object):
 				msg = msg.encode()
 
 			self.message_queue.put_nowait(msg)
+			logging.info("%s: message queued." % time.strftime("%d%b%Y,%H:%M"))
 			gevent.sleep(0.2)
 
 	def send_outbox(self,msgpack):
@@ -83,15 +84,17 @@ class Gateway(object):
 		while True:
 			if not self.message_queue.empty():
 				msg = self.message_queue.get()
+				logging.info("%s: dequeue: %s" % (time.strftime("%d%b%Y,%H:%M"),msg))
 				msg_dict = json.loads(msg)
-
+				logging.info("%s: sending...." % time.strftime("%d%b%Y,%H:%M"))
 				number = msg_dict['number']
 				message = msg_dict['message']
 				mid = msg_dict['id']
 				#gevent.spawn(self.sms_send,number,message)
-				try: 
+				try:
+					
 					self.__modem.sms_send(number,message)
-					logging.info("%s: message id# %s sent." % time.strftime("%d%b%Y,%H:%M"),mid)
+					logging.info("%s: sent msg#: %s" % (time.strftime("%d%b%Y,%H:%M"),mid))
 				except modem.AtCommandError:
 					logging.warning("%s: sms not sent AtCommandError, rssi: %s,id:%s" %(time.strftime("%d%b%Y,%H:%M"),self.__modem.get_rssi()),mid)
 					gevent.spawn(self.send_outbox,msg)
