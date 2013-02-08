@@ -67,3 +67,120 @@ INFO:root:08Feb2013,10:20: message queued.
 INFO:root:08Feb2013,10:20: dequeue: {"id":1360290036,"number":"09186709817","message":"hello world"}
 INFO:root:08Feb2013,10:20: sending....
 INFO:root:08Feb2013,10:20: sent msg#: 1360290036
+INFO:root:08Feb2013,10:24: Starting Gateway
+INFO:root:08Feb2013,10:24: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:24 Gateway recv starting.
+INFO:root:08Feb2013,10:24: Gateway queue starting.
+INFO:root:08Feb2013,10:24: Gateway send starting.
+INFO:root:08Feb2013,10:28: message queued.
+INFO:root:08Feb2013,10:28: dequeue: {"id":1360290485,"number":"09186709817","message":"from console"}
+INFO:root:08Feb2013,10:28: sending....
+INFO:root:08Feb2013,10:28: sent msg#: 1360290485
+INFO:root:08Feb2013,10:42: Starting Gateway
+INFO:root:08Feb2013,10:42: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:42 Gateway recv starting.
+INFO:root:08Feb2013,10:42: Gateway queue starting.
+INFO:root:08Feb2013,10:42: Gateway send starting.
+INFO:root:08Feb2013,10:42: message queued.
+INFO:root:08Feb2013,10:42: dequeue: {"id":1360291359,"number":"09186709817","message":"sdfdf"}
+INFO:root:08Feb2013,10:42: sending....
+INFO:root:08Feb2013,10:42: sent msg#: 1360291359
+INFO:root:08Feb2013,10:53: Starting Gateway
+INFO:root:08Feb2013,10:53: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,10:53 Gateway recv starting.
+INFO:root:08Feb2013,10:53: Gateway queue starting.
+INFO:root:08Feb2013,10:53: Gateway send starting.
+INFO:root:08Feb2013,10:53: message queued.
+INFO:root:08Feb2013,10:53: dequeue: {"id":1360292035,"number":"09186709817","message":"due date"}
+INFO:root:08Feb2013,10:53: sending....
+INFO:root:08Feb2013,10:54: sent msg#: 1360292035
+INFO:root:08Feb2013,10:55: message queued.
+INFO:root:08Feb2013,10:55: dequeue: {"id":1360292129,"number":"09186709817","message":"1355554363.0"}
+INFO:root:08Feb2013,10:55: sending....
+INFO:root:08Feb2013,10:55: sent msg#: 1360292129
+INFO:root:08Feb2013,10:56: message queued.
+INFO:root:08Feb2013,10:56: dequeue: {"id":1360292207,"number":"09186709817","message":"1355554363.0"}
+INFO:root:08Feb2013,10:56: sending....
+INFO:root:08Feb2013,10:56: sent msg#: 1360292207
+INFO:root:08Feb2013,11:00: message queued.
+INFO:root:08Feb2013,11:00: dequeue: {"id":1360292438,"number":"09186709817","message":"0\/17\/1970"}
+INFO:root:08Feb2013,11:00: sending....
+INFO:root:08Feb2013,11:00: sent msg#: 1360292438
+INFO:root:08Feb2013,11:01: message queued.
+INFO:root:08Feb2013,11:01: dequeue: {"id":1360292482,"number":"09186709817","message":"0\/17\/1970"}
+INFO:root:08Feb2013,11:01: sending....
+INFO:root:08Feb2013,11:01: sent msg#: 1360292482
+INFO:root:08Feb2013,11:02: message queued.
+INFO:root:08Feb2013,11:02: dequeue: {"id":1360292527,"number":"09186709817","message":"11\/15\/2012"}
+INFO:root:08Feb2013,11:02: sending....
+INFO:root:08Feb2013,11:02: sent msg#: 1360292527
+INFO:root:08Feb2013,11:03: message queued.
+INFO:root:08Feb2013,11:03: dequeue: {"id":1360292613,"number":"09186709817","message":"12\/15\/2012"}
+INFO:root:08Feb2013,11:03: sending....
+INFO:root:08Feb2013,11:03: sent msg#: 1360292613
+INFO:root:08Feb2013,11:04: message queued.
+INFO:root:08Feb2013,11:04: dequeue: {"id":1360292686,"number":"09186709817","message":"your due date for order 79 is on 12\/15\/2012"}
+INFO:root:08Feb2013,11:04: sending....
+INFO:root:08Feb2013,11:04: sent msg#: 1360292686
+INFO:root:08Feb2013,11:07: message queued.
+INFO:root:08Feb2013,11:07: dequeue: {"id":1360292876,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
+INFO:root:08Feb2013,11:07: sending....
+INFO:root:08Feb2013,11:08: sent msg#: 1360292876
+INFO:root:08Feb2013,11:18: Starting Gateway
+INFO:root:08Feb2013,11:18: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,11:18 Gateway recv starting.
+INFO:root:08Feb2013,11:18: Gateway queue starting.
+INFO:root:08Feb2013,11:18: Gateway send starting.
+INFO:root:08Feb2013,11:24: Starting Gateway
+INFO:root:08Feb2013,11:24: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,11:24 Gateway recv starting.
+INFO:root:08Feb2013,11:24: Gateway queue starting.
+INFO:root:08Feb2013,11:24: Gateway send starting.
+INFO:root:08Feb2013,11:27: Starting Gateway
+INFO:root:08Feb2013,11:27: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,11:27 Gateway recv starting.
+INFO:root:08Feb2013,11:27: Gateway queue starting.
+INFO:root:08Feb2013,11:27: Gateway send starting.
+INFO:root:08Feb2013,11:27 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294054.0}.
+INFO:root:08Feb2013,11:30 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294251.0}.
+INFO:root:08Feb2013,11:30: message queued.
+INFO:root:08Feb2013,11:30: dequeue: {"message": "Fri Feb  8 07:30:56 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360294256.3556991, "number": "09186709817"}
+INFO:root:08Feb2013,11:30: sending....
+INFO:root:08Feb2013,11:30: sent msg#: 1360294256.36
+INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294271.0}.
+INFO:root:08Feb2013,11:31: message queued.
+INFO:root:08Feb2013,11:31: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360294276.5022509, "number": "09186709817"}
+INFO:root:08Feb2013,11:31: sending....
+INFO:root:08Feb2013,11:31: sent msg#: 1360294276.5
+INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': '1/2 For loading ystrday,heres ur FREE TIP: Fresh veggies alwys! Mglagay ng crumpled newspaper sa lining ng vegetable compartment ng ref. Simple pero effective!', 'sender': '8377658284', 'time': 1360294301.0}.
+INFO:root:08Feb2013,11:31: message queued.
+INFO:root:08Feb2013,11:31: dequeue: {"message": "command error", "id": 1360294306.4644139, "number": "8377658284"}
+INFO:root:08Feb2013,11:31: sending....
+INFO:root:08Feb2013,11:31: sent msg#: 1360294306.46
+INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': '2/2P10000 CASH sayo na pg ikaw ang LUCKY txter! Txt now! RMS5-NinjaStrike TWA5-AgeOfEmpire BIB5-BomberBoy Txt<code>to 206 Ul gt 2x/wkClub P5 Ex.RMS5 DTI9927', 'sender': '8377658284', 'time': 1360294301.0}.
+INFO:root:08Feb2013,11:31: message queued.
+INFO:root:08Feb2013,11:31: dequeue: {"message": "command error", "id": 1360294318.587894, "number": "8377658284"}
+INFO:root:08Feb2013,11:31: sending....
+INFO:root:08Feb2013,11:32: sent msg#: 1360294318.59
+INFO:root:08Feb2013,11:32 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294334.0}.
+INFO:root:08Feb2013,11:32: message queued.
+INFO:root:08Feb2013,11:32: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360294339.123776, "number": "09186709817"}
+INFO:root:08Feb2013,11:32: sending....
+INFO:root:08Feb2013,11:32: sent msg#: 1360294339.12
+INFO:root:08Feb2013,11:33 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 600', 'sender': '09186709817', 'time': 1360294383.0}.
+INFO:root:08Feb2013,11:33: message queued.
+INFO:root:08Feb2013,11:33: dequeue: {"message": "Stock #600 has only 30 item/s left.", "id": 1360294386.225625, "number": "09186709817"}
+INFO:root:08Feb2013,11:33: sending....
+INFO:root:08Feb2013,11:33: sent msg#: 1360294386.23
+INFO:root:08Feb2013,11:33 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294430.0}.
+INFO:root:08Feb2013,11:34 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294441.0}.
+INFO:root:08Feb2013,11:35 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294502.0}.
+INFO:root:08Feb2013,11:41: Starting Gateway
+INFO:root:08Feb2013,11:41: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,11:41 Gateway recv starting.
+INFO:root:08Feb2013,11:41: Gateway queue starting.
+INFO:root:08Feb2013,11:41: Gateway send starting.
+INFO:root:08Feb2013,11:41: message queued.
+INFO:root:08Feb2013,11:41: dequeue: {"id":1360294914,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
+INFO:root:08Feb2013,11:41: sending....
+INFO:root:08Feb2013,11:41: sent msg#: 1360294914

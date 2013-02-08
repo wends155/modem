@@ -57,6 +57,7 @@ class Gateway(object):
 		logging.info("%s Gateway recv starting." % time.strftime("%d%b%Y,%H:%M"))
 		while True:
 			for msg in self.__modem.unread():
+				logging.info("%s recv msg: %s." % (time.strftime("%d%b%Y,%H:%M"),msg))
 				pack_str = json.dumps(msg)
 				print pack_str
 				self.__push.send_string(pack_str)
