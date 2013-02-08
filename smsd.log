@@ -184,3 +184,42 @@ INFO:root:08Feb2013,11:41: message queued.
 INFO:root:08Feb2013,11:41: dequeue: {"id":1360294914,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
 INFO:root:08Feb2013,11:41: sending....
 INFO:root:08Feb2013,11:41: sent msg#: 1360294914
+INFO:root:08Feb2013,11:44: Starting Gateway
+INFO:root:08Feb2013,11:44: connecting to host: 184.164.136.144
+INFO:root:08Feb2013,11:44 Gateway recv starting.
+INFO:root:08Feb2013,11:44: Gateway queue starting.
+INFO:root:08Feb2013,11:44: Gateway send starting.
+INFO:root:08Feb2013,11:44 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295066.0}.
+INFO:root:08Feb2013,11:44: message queued.
+INFO:root:08Feb2013,11:44: dequeue: {"message": "Fri Feb  8 11:44:33 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295073.924698, "number": "09186709817"}
+INFO:root:08Feb2013,11:44: sending....
+INFO:root:08Feb2013,11:44: sent msg#: 1360295073.92
+INFO:root:08Feb2013,11:44 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 101', 'sender': '09186709817', 'time': 1360295092.0}.
+INFO:root:08Feb2013,11:44: message queued.
+INFO:root:08Feb2013,11:44: dequeue: {"message": "Stock is not available.", "id": 1360295097.82456, "number": "09186709817"}
+INFO:root:08Feb2013,11:44: sending....
+INFO:root:08Feb2013,11:45: sent msg#: 1360295097.82
+INFO:root:08Feb2013,11:45 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 101', 'sender': '09186709817', 'time': 1360295150.0}.
+INFO:root:08Feb2013,11:45: message queued.
+INFO:root:08Feb2013,11:45: dequeue: {"message": "Stock is not available.", "id": 1360295156.6482301, "number": "09186709817"}
+INFO:root:08Feb2013,11:45: sending....
+INFO:root:08Feb2013,11:45: sent msg#: 1360295156.65
+INFO:root:08Feb2013,11:46 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295158.0}.
+INFO:root:08Feb2013,11:46: message queued.
+INFO:root:08Feb2013,11:46: dequeue: {"message": "Fri Feb  8 07:46:16 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295176.4722929, "number": "09186709817"}
+INFO:root:08Feb2013,11:46: sending....
+INFO:root:08Feb2013,11:46: sent msg#: 1360295176.47
+INFO:root:08Feb2013,11:46 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360295205.0}.
+INFO:root:08Feb2013,11:46: message queued.
+INFO:root:08Feb2013,11:46: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360295212.0420151, "number": "09186709817"}
+INFO:root:08Feb2013,11:46: sending....
+INFO:root:08Feb2013,11:46: sent msg#: 1360295212.04
+INFO:root:08Feb2013,11:47: message queued.
+INFO:root:08Feb2013,11:47: dequeue: {"id":1360295264,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
+INFO:root:08Feb2013,11:47: sending....
+INFO:root:08Feb2013,11:47: sent msg#: 1360295264
+INFO:root:08Feb2013,11:50 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295417.0}.
+INFO:root:08Feb2013,11:50: message queued.
+INFO:root:08Feb2013,11:50: dequeue: {"message": "Fri Feb  8 07:50:23 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295423.1651559, "number": "09186709817"}
+INFO:root:08Feb2013,11:50: sending....
+INFO:root:08Feb2013,11:50: sent msg#: 1360295423.17
