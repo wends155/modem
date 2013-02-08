@@ -87,12 +87,13 @@ class Gateway(object):
 
 				number = msg_dict['number']
 				message = msg_dict['message']
+				mid = msg_dict['id']
 				#gevent.spawn(self.sms_send,number,message)
 				try: 
 					self.__modem.sms_send(number,message)
-					
+					logging.info("%s: message id# %s sent." % time.strftime("%d%b%Y,%H:%M"),mid)
 				except modem.AtCommandError:
-					logging.warning("%s: sms not sent AtCommandError, rssi: %s" %(time.strftime("%d%b%Y,%H:%M"),self.__modem.get_rssi()))
+					logging.warning("%s: sms not sent AtCommandError, rssi: %s,id:%s" %(time.strftime("%d%b%Y,%H:%M"),self.__modem.get_rssi()),mid)
 					gevent.spawn(self.send_outbox,msg)
 			gevent.sleep(0.2)
 
