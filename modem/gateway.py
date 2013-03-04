@@ -62,7 +62,7 @@ class Gateway(object):
 				print pack_str
 				self.__push.send_string(pack_str)
 				self.__modem.sms_del(msg['index'])
-			gevent.sleep(0.2)
+			gevent.sleep(0.5)
 
 	def queue(self):
 		logging.info("%s: Gateway queue starting." % time.strftime("%d%b%Y,%H:%M"))
@@ -99,7 +99,7 @@ class Gateway(object):
 				except modem.AtCommandError:
 					logging.warning("%s: sms not sent AtCommandError, rssi: %s,id:%s" %(time.strftime("%d%b%Y,%H:%M"),self.__modem.get_rssi(),mid))
 					gevent.spawn(self.send_outbox,msg)
-			gevent.sleep(0.2)
+			gevent.sleep(0.5)
 
 	def stop(self,signum,frame):
 		logging.info("%s Stopping." % time.strftime("%d%b%Y,%H:%M"))

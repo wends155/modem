@@ -1,225 +1,109 @@
 
-INFO:root:08Feb2013,09:43: Starting Gateway
-INFO:root:08Feb2013,09:43: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,09:43 Gateway recv starting.
-INFO:root:08Feb2013,09:43: Gateway queue starting.
-INFO:root:08Feb2013,09:43: Gateway send starting.
-INFO:root:08Feb2013,09:55: Starting Gateway
-INFO:root:08Feb2013,09:55: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,09:55 Gateway recv starting.
-INFO:root:08Feb2013,09:55: Gateway queue starting.
-INFO:root:08Feb2013,09:55: Gateway send starting.
-INFO:root:08Feb2013,10:00: Starting Gateway
-INFO:root:08Feb2013,10:00: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:00 Gateway recv starting.
-INFO:root:08Feb2013,10:00: Gateway queue starting.
-INFO:root:08Feb2013,10:00: Gateway send starting.
-INFO:root:08Feb2013,10:09: Starting Gateway
-INFO:root:08Feb2013,10:09: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:09 Gateway recv starting.
-INFO:root:08Feb2013,10:09: Gateway queue starting.
-INFO:root:08Feb2013,10:09: Gateway send starting.
-INFO:root:08Feb2013,10:13: Starting Gateway
-INFO:root:08Feb2013,10:13: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:13 Gateway recv starting.
-INFO:root:08Feb2013,10:13: Gateway queue starting.
-INFO:root:08Feb2013,10:13: Gateway send starting.
-INFO:root:08Feb2013,10:13: message queued.
-INFO:root:08Feb2013,10:15: Starting Gateway
-INFO:root:08Feb2013,10:15: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:15 Gateway recv starting.
-INFO:root:08Feb2013,10:15: Gateway queue starting.
-INFO:root:08Feb2013,10:15: Gateway send starting.
-INFO:root:08Feb2013,10:15: message queued.
-INFO:root:08Feb2013,10:15: sending....
-INFO:root:08Feb2013,10:15: message queued.
-INFO:root:08Feb2013,10:15: sending....
-INFO:root:08Feb2013,10:15: message queued.
-INFO:root:08Feb2013,10:15: sending....
-INFO:root:08Feb2013,10:17: Starting Gateway
-INFO:root:08Feb2013,10:17: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:17 Gateway recv starting.
-INFO:root:08Feb2013,10:17: Gateway queue starting.
-INFO:root:08Feb2013,10:17: Gateway send starting.
-INFO:root:08Feb2013,10:17: message queued.
-INFO:root:08Feb2013,10:17: message queued.
-INFO:root:08Feb2013,10:18: Starting Gateway
-INFO:root:08Feb2013,10:18: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:18 Gateway recv starting.
-INFO:root:08Feb2013,10:18: Gateway queue starting.
-INFO:root:08Feb2013,10:18: Gateway send starting.
-INFO:root:08Feb2013,10:18: message queued.
-INFO:root:08Feb2013,10:18: dequeue: {"id":1360289923,"number":"09186709817","message":"test from php"}
-INFO:root:08Feb2013,10:18: sending....
-INFO:root:08Feb2013,10:19: message queued.
-INFO:root:08Feb2013,10:19: dequeue: {"id":1360289945,"number":"09186709817","message":"hello world"}
-INFO:root:08Feb2013,10:19: sending....
-INFO:root:08Feb2013,10:20: Starting Gateway
-INFO:root:08Feb2013,10:20: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:20 Gateway recv starting.
-INFO:root:08Feb2013,10:20: Gateway queue starting.
-INFO:root:08Feb2013,10:20: Gateway send starting.
-INFO:root:08Feb2013,10:20: message queued.
-INFO:root:08Feb2013,10:20: dequeue: {"id":1360290012,"number":"09186709817","message":"test from php"}
-INFO:root:08Feb2013,10:20: sending....
-INFO:root:08Feb2013,10:20: sent msg#: 1360290012
-INFO:root:08Feb2013,10:20: message queued.
-INFO:root:08Feb2013,10:20: dequeue: {"id":1360290036,"number":"09186709817","message":"hello world"}
-INFO:root:08Feb2013,10:20: sending....
-INFO:root:08Feb2013,10:20: sent msg#: 1360290036
-INFO:root:08Feb2013,10:24: Starting Gateway
-INFO:root:08Feb2013,10:24: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:24 Gateway recv starting.
-INFO:root:08Feb2013,10:24: Gateway queue starting.
-INFO:root:08Feb2013,10:24: Gateway send starting.
-INFO:root:08Feb2013,10:28: message queued.
-INFO:root:08Feb2013,10:28: dequeue: {"id":1360290485,"number":"09186709817","message":"from console"}
-INFO:root:08Feb2013,10:28: sending....
-INFO:root:08Feb2013,10:28: sent msg#: 1360290485
-INFO:root:08Feb2013,10:42: Starting Gateway
-INFO:root:08Feb2013,10:42: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:42 Gateway recv starting.
-INFO:root:08Feb2013,10:42: Gateway queue starting.
-INFO:root:08Feb2013,10:42: Gateway send starting.
-INFO:root:08Feb2013,10:42: message queued.
-INFO:root:08Feb2013,10:42: dequeue: {"id":1360291359,"number":"09186709817","message":"sdfdf"}
-INFO:root:08Feb2013,10:42: sending....
-INFO:root:08Feb2013,10:42: sent msg#: 1360291359
-INFO:root:08Feb2013,10:53: Starting Gateway
-INFO:root:08Feb2013,10:53: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,10:53 Gateway recv starting.
-INFO:root:08Feb2013,10:53: Gateway queue starting.
-INFO:root:08Feb2013,10:53: Gateway send starting.
-INFO:root:08Feb2013,10:53: message queued.
-INFO:root:08Feb2013,10:53: dequeue: {"id":1360292035,"number":"09186709817","message":"due date"}
-INFO:root:08Feb2013,10:53: sending....
-INFO:root:08Feb2013,10:54: sent msg#: 1360292035
-INFO:root:08Feb2013,10:55: message queued.
-INFO:root:08Feb2013,10:55: dequeue: {"id":1360292129,"number":"09186709817","message":"1355554363.0"}
-INFO:root:08Feb2013,10:55: sending....
-INFO:root:08Feb2013,10:55: sent msg#: 1360292129
-INFO:root:08Feb2013,10:56: message queued.
-INFO:root:08Feb2013,10:56: dequeue: {"id":1360292207,"number":"09186709817","message":"1355554363.0"}
-INFO:root:08Feb2013,10:56: sending....
-INFO:root:08Feb2013,10:56: sent msg#: 1360292207
-INFO:root:08Feb2013,11:00: message queued.
-INFO:root:08Feb2013,11:00: dequeue: {"id":1360292438,"number":"09186709817","message":"0\/17\/1970"}
-INFO:root:08Feb2013,11:00: sending....
-INFO:root:08Feb2013,11:00: sent msg#: 1360292438
-INFO:root:08Feb2013,11:01: message queued.
-INFO:root:08Feb2013,11:01: dequeue: {"id":1360292482,"number":"09186709817","message":"0\/17\/1970"}
-INFO:root:08Feb2013,11:01: sending....
-INFO:root:08Feb2013,11:01: sent msg#: 1360292482
-INFO:root:08Feb2013,11:02: message queued.
-INFO:root:08Feb2013,11:02: dequeue: {"id":1360292527,"number":"09186709817","message":"11\/15\/2012"}
-INFO:root:08Feb2013,11:02: sending....
-INFO:root:08Feb2013,11:02: sent msg#: 1360292527
-INFO:root:08Feb2013,11:03: message queued.
-INFO:root:08Feb2013,11:03: dequeue: {"id":1360292613,"number":"09186709817","message":"12\/15\/2012"}
-INFO:root:08Feb2013,11:03: sending....
-INFO:root:08Feb2013,11:03: sent msg#: 1360292613
-INFO:root:08Feb2013,11:04: message queued.
-INFO:root:08Feb2013,11:04: dequeue: {"id":1360292686,"number":"09186709817","message":"your due date for order 79 is on 12\/15\/2012"}
-INFO:root:08Feb2013,11:04: sending....
-INFO:root:08Feb2013,11:04: sent msg#: 1360292686
-INFO:root:08Feb2013,11:07: message queued.
-INFO:root:08Feb2013,11:07: dequeue: {"id":1360292876,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
-INFO:root:08Feb2013,11:07: sending....
-INFO:root:08Feb2013,11:08: sent msg#: 1360292876
-INFO:root:08Feb2013,11:18: Starting Gateway
-INFO:root:08Feb2013,11:18: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,11:18 Gateway recv starting.
-INFO:root:08Feb2013,11:18: Gateway queue starting.
-INFO:root:08Feb2013,11:18: Gateway send starting.
-INFO:root:08Feb2013,11:24: Starting Gateway
-INFO:root:08Feb2013,11:24: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,11:24 Gateway recv starting.
-INFO:root:08Feb2013,11:24: Gateway queue starting.
-INFO:root:08Feb2013,11:24: Gateway send starting.
-INFO:root:08Feb2013,11:27: Starting Gateway
-INFO:root:08Feb2013,11:27: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,11:27 Gateway recv starting.
-INFO:root:08Feb2013,11:27: Gateway queue starting.
-INFO:root:08Feb2013,11:27: Gateway send starting.
-INFO:root:08Feb2013,11:27 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294054.0}.
-INFO:root:08Feb2013,11:30 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294251.0}.
-INFO:root:08Feb2013,11:30: message queued.
-INFO:root:08Feb2013,11:30: dequeue: {"message": "Fri Feb  8 07:30:56 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360294256.3556991, "number": "09186709817"}
-INFO:root:08Feb2013,11:30: sending....
-INFO:root:08Feb2013,11:30: sent msg#: 1360294256.36
-INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294271.0}.
-INFO:root:08Feb2013,11:31: message queued.
-INFO:root:08Feb2013,11:31: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360294276.5022509, "number": "09186709817"}
-INFO:root:08Feb2013,11:31: sending....
-INFO:root:08Feb2013,11:31: sent msg#: 1360294276.5
-INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': '1/2 For loading ystrday,heres ur FREE TIP: Fresh veggies alwys! Mglagay ng crumpled newspaper sa lining ng vegetable compartment ng ref. Simple pero effective!', 'sender': '8377658284', 'time': 1360294301.0}.
-INFO:root:08Feb2013,11:31: message queued.
-INFO:root:08Feb2013,11:31: dequeue: {"message": "command error", "id": 1360294306.4644139, "number": "8377658284"}
-INFO:root:08Feb2013,11:31: sending....
-INFO:root:08Feb2013,11:31: sent msg#: 1360294306.46
-INFO:root:08Feb2013,11:31 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': '2/2P10000 CASH sayo na pg ikaw ang LUCKY txter! Txt now! RMS5-NinjaStrike TWA5-AgeOfEmpire BIB5-BomberBoy Txt<code>to 206 Ul gt 2x/wkClub P5 Ex.RMS5 DTI9927', 'sender': '8377658284', 'time': 1360294301.0}.
-INFO:root:08Feb2013,11:31: message queued.
-INFO:root:08Feb2013,11:31: dequeue: {"message": "command error", "id": 1360294318.587894, "number": "8377658284"}
-INFO:root:08Feb2013,11:31: sending....
-INFO:root:08Feb2013,11:32: sent msg#: 1360294318.59
-INFO:root:08Feb2013,11:32 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294334.0}.
-INFO:root:08Feb2013,11:32: message queued.
-INFO:root:08Feb2013,11:32: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360294339.123776, "number": "09186709817"}
-INFO:root:08Feb2013,11:32: sending....
-INFO:root:08Feb2013,11:32: sent msg#: 1360294339.12
-INFO:root:08Feb2013,11:33 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 600', 'sender': '09186709817', 'time': 1360294383.0}.
-INFO:root:08Feb2013,11:33: message queued.
-INFO:root:08Feb2013,11:33: dequeue: {"message": "Stock #600 has only 30 item/s left.", "id": 1360294386.225625, "number": "09186709817"}
-INFO:root:08Feb2013,11:33: sending....
-INFO:root:08Feb2013,11:33: sent msg#: 1360294386.23
-INFO:root:08Feb2013,11:33 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294430.0}.
-INFO:root:08Feb2013,11:34 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360294441.0}.
-INFO:root:08Feb2013,11:35 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360294502.0}.
-INFO:root:08Feb2013,11:41: Starting Gateway
-INFO:root:08Feb2013,11:41: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,11:41 Gateway recv starting.
-INFO:root:08Feb2013,11:41: Gateway queue starting.
-INFO:root:08Feb2013,11:41: Gateway send starting.
-INFO:root:08Feb2013,11:41: message queued.
-INFO:root:08Feb2013,11:41: dequeue: {"id":1360294914,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
-INFO:root:08Feb2013,11:41: sending....
-INFO:root:08Feb2013,11:41: sent msg#: 1360294914
-INFO:root:08Feb2013,11:44: Starting Gateway
-INFO:root:08Feb2013,11:44: connecting to host: 184.164.136.144
-INFO:root:08Feb2013,11:44 Gateway recv starting.
-INFO:root:08Feb2013,11:44: Gateway queue starting.
-INFO:root:08Feb2013,11:44: Gateway send starting.
-INFO:root:08Feb2013,11:44 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295066.0}.
-INFO:root:08Feb2013,11:44: message queued.
-INFO:root:08Feb2013,11:44: dequeue: {"message": "Fri Feb  8 11:44:33 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295073.924698, "number": "09186709817"}
-INFO:root:08Feb2013,11:44: sending....
-INFO:root:08Feb2013,11:44: sent msg#: 1360295073.92
-INFO:root:08Feb2013,11:44 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 101', 'sender': '09186709817', 'time': 1360295092.0}.
-INFO:root:08Feb2013,11:44: message queued.
-INFO:root:08Feb2013,11:44: dequeue: {"message": "Stock is not available.", "id": 1360295097.82456, "number": "09186709817"}
-INFO:root:08Feb2013,11:44: sending....
-INFO:root:08Feb2013,11:45: sent msg#: 1360295097.82
-INFO:root:08Feb2013,11:45 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 101', 'sender': '09186709817', 'time': 1360295150.0}.
-INFO:root:08Feb2013,11:45: message queued.
-INFO:root:08Feb2013,11:45: dequeue: {"message": "Stock is not available.", "id": 1360295156.6482301, "number": "09186709817"}
-INFO:root:08Feb2013,11:45: sending....
-INFO:root:08Feb2013,11:45: sent msg#: 1360295156.65
-INFO:root:08Feb2013,11:46 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295158.0}.
-INFO:root:08Feb2013,11:46: message queued.
-INFO:root:08Feb2013,11:46: dequeue: {"message": "Fri Feb  8 07:46:16 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295176.4722929, "number": "09186709817"}
-INFO:root:08Feb2013,11:46: sending....
-INFO:root:08Feb2013,11:46: sent msg#: 1360295176.47
-INFO:root:08Feb2013,11:46 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 14', 'sender': '09186709817', 'time': 1360295205.0}.
-INFO:root:08Feb2013,11:46: message queued.
-INFO:root:08Feb2013,11:46: dequeue: {"message": "Stock #14 has only 8 item/s left.", "id": 1360295212.0420151, "number": "09186709817"}
-INFO:root:08Feb2013,11:46: sending....
-INFO:root:08Feb2013,11:46: sent msg#: 1360295212.04
-INFO:root:08Feb2013,11:47: message queued.
-INFO:root:08Feb2013,11:47: dequeue: {"id":1360295264,"number":"09186709817","message":"your due date for order#79 is on 12\/15\/2012"}
-INFO:root:08Feb2013,11:47: sending....
-INFO:root:08Feb2013,11:47: sent msg#: 1360295264
-INFO:root:08Feb2013,11:50 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 76', 'sender': '09186709817', 'time': 1360295417.0}.
-INFO:root:08Feb2013,11:50: message queued.
-INFO:root:08Feb2013,11:50: dequeue: {"message": "Fri Feb  8 07:50:23 2013 \nOrder#: 76\nbalance: Php0.00\ndue date: 03/08/2013", "id": 1360295423.1651559, "number": "09186709817"}
-INFO:root:08Feb2013,11:50: sending....
-INFO:root:08Feb2013,11:50: sent msg#: 1360295423.17
+INFO:root:04Mar2013,10:08: Starting Gateway
+INFO:root:04Mar2013,10:08: connecting to host: 184.164.136.144
+INFO:root:04Mar2013,10:08 Gateway recv starting.
+INFO:root:04Mar2013,10:08: Gateway queue starting.
+INFO:root:04Mar2013,10:08: Gateway send starting.
+INFO:root:04Mar2013,10:09 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'test', 'sender': '09186709817', 'time': 1362362937.0}.
+INFO:root:04Mar2013,10:09 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362362947.0}.
+INFO:root:04Mar2013,10:09: Starting Gateway
+INFO:root:04Mar2013,10:09: connecting to host: 184.164.136.144
+INFO:root:04Mar2013,10:09 Gateway recv starting.
+INFO:root:04Mar2013,10:09: Gateway queue starting.
+INFO:root:04Mar2013,10:09: Gateway send starting.
+INFO:root:04Mar2013,10:10 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362363013.0}.
+INFO:root:04Mar2013,10:10: message queued.
+INFO:root:04Mar2013,10:10: dequeue: {"message": "command error", "id": 1362363016.805148, "number": "09186709817"}
+INFO:root:04Mar2013,10:10: sending....
+INFO:root:04Mar2013,10:10: sent msg#: 1362363016.81
+INFO:root:04Mar2013,10:10 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'test', 'sender': '09186709817', 'time': 1362363044.0}.
+INFO:root:04Mar2013,10:10: message queued.
+INFO:root:04Mar2013,10:10: dequeue: {"message": "command error", "id": 1362363047.824782, "number": "09186709817"}
+INFO:root:04Mar2013,10:10: sending....
+INFO:root:04Mar2013,10:10: sent msg#: 1362363047.82
+INFO:root:04Mar2013,10:11 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362363072.0}.
+INFO:root:04Mar2013,10:11: message queued.
+INFO:root:04Mar2013,10:11: dequeue: {"message": "command error", "id": 1362363076.30284, "number": "09186709817"}
+INFO:root:04Mar2013,10:11: sending....
+INFO:root:04Mar2013,10:11: sent msg#: 1362363076.3
+INFO:root:04Mar2013,10:11 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362363115.0}.
+INFO:root:04Mar2013,10:11: message queued.
+INFO:root:04Mar2013,10:11: dequeue: {"message": "Mon Mar  4 10:11:58 2013 \nOrder#: 81\nbalance: 483.6\ndue date: Unclaimed", "id": 1362363118.978655, "number": "09186709817"}
+INFO:root:04Mar2013,10:11: sending....
+INFO:root:04Mar2013,10:12: sent msg#: 1362363118.98
+INFO:root:04Mar2013,10:12 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'test', 'sender': '09186709817', 'time': 1362363135.0}.
+INFO:root:04Mar2013,10:12: message queued.
+INFO:root:04Mar2013,10:12: dequeue: {"message": "command error", "id": 1362363138.66862, "number": "09186709817"}
+INFO:root:04Mar2013,10:12: sending....
+INFO:root:04Mar2013,10:12: sent msg#: 1362363138.67
+INFO:root:04Mar2013,10:13 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362363218.0}.
+INFO:root:04Mar2013,10:16 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362363389.0}.
+INFO:root:04Mar2013,10:17 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362363462.0}.
+INFO:root:04Mar2013,10:18 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362363481.0}.
+INFO:root:04Mar2013,10:18: Starting Gateway
+INFO:root:04Mar2013,10:18: connecting to host: 184.164.136.144
+INFO:root:04Mar2013,10:18 Gateway recv starting.
+INFO:root:04Mar2013,10:18: Gateway queue starting.
+INFO:root:04Mar2013,10:18: Gateway send starting.
+INFO:root:04Mar2013,10:18 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'test', 'sender': '09186709817', 'time': 1362363524.0}.
+INFO:root:04Mar2013,10:18: message queued.
+INFO:root:04Mar2013,10:18: dequeue: {"message": "command error", "id": 1362363527.522755, "number": "09186709817"}
+INFO:root:04Mar2013,10:18: sending....
+INFO:root:04Mar2013,10:18: sent msg#: 1362363527.52
+INFO:root:04Mar2013,10:19 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362363542.0}.
+INFO:root:04Mar2013,10:19: message queued.
+INFO:root:04Mar2013,10:19: dequeue: {"message": "Mon Mar  4 10:19:05 2013 \nOrder#: 81\nbalance: 483.6\ndue date: Unclaimed", "id": 1362363545.690435, "number": "09186709817"}
+INFO:root:04Mar2013,10:19: sending....
+INFO:root:04Mar2013,10:19: sent msg#: 1362363545.69
+INFO:root:04Mar2013,10:19 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362363568.0}.
+INFO:root:04Mar2013,10:19: message queued.
+INFO:root:04Mar2013,10:19: dequeue: {"message": "Order does not exist", "id": 1362363572.155771, "number": "09186709817"}
+INFO:root:04Mar2013,10:19: sending....
+INFO:root:04Mar2013,10:19: sent msg#: 1362363572.16
+INFO:root:04Mar2013,10:20 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'Ads info 10', 'sender': '09186709817', 'time': 1362363605.0}.
+INFO:root:04Mar2013,10:20: message queued.
+INFO:root:04Mar2013,10:20: dequeue: {"message": "Mon Mar  4 10:20:08 2013 \nOrder#: 10\nbalance: Php3,685.50\ndue date: 03/08/2013", "id": 1362363608.763416, "number": "09186709817"}
+INFO:root:04Mar2013,10:20: sending....
+INFO:root:04Mar2013,10:20: sent msg#: 1362363608.76
+INFO:root:04Mar2013,10:32 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'Ads info 10', 'sender': '09186709817', 'time': 1362364332.0}.
+INFO:root:04Mar2013,10:32: Starting Gateway
+INFO:root:04Mar2013,10:32: connecting to host: 184.164.136.144
+INFO:root:04Mar2013,10:32 Gateway recv starting.
+INFO:root:04Mar2013,10:32: Gateway queue starting.
+INFO:root:04Mar2013,10:32: Gateway send starting.
+INFO:root:04Mar2013,10:32 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'Ads info 10', 'sender': '09186709817', 'time': 1362364370.0}.
+INFO:root:04Mar2013,10:34 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'Ads info 10', 'sender': '09186709817', 'time': 1362364441.0}.
+INFO:root:04Mar2013,10:34: message queued.
+INFO:root:04Mar2013,10:34: dequeue: {"message": "Mon Mar  4 10:34:04 2013 \nOrder#: 10\nbalance: Php3,685.50\ndue date: 03/08/2013", "id": 1362364444.449161, "number": "09186709817"}
+INFO:root:04Mar2013,10:34: sending....
+INFO:root:04Mar2013,10:34: sent msg#: 1362364444.45
+INFO:root:04Mar2013,10:35 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'Ads info 10', 'sender': '09186709817', 'time': 1362364542.0}.
+INFO:root:04Mar2013,10:35: message queued.
+INFO:root:04Mar2013,10:35: dequeue: {"message": "Mon Mar  4 10:35:46 2013 \nOrder#: 10\nbalance: Php3,685.50\ndue date: 03/08/2013", "id": 1362364546.03042, "number": "09186709817"}
+INFO:root:04Mar2013,10:35: sending....
+INFO:root:04Mar2013,10:35: sent msg#: 1362364546.03
+INFO:root:04Mar2013,10:36 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362364576.0}.
+INFO:root:04Mar2013,10:36: message queued.
+INFO:root:04Mar2013,10:36: dequeue: {"message": "Order does not exist", "id": 1362364579.604579, "number": "09186709817"}
+INFO:root:04Mar2013,10:36: sending....
+INFO:root:04Mar2013,10:36: sent msg#: 1362364579.6
+INFO:root:04Mar2013,10:36 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 812', 'sender': '09186709817', 'time': 1362364604.0}.
+INFO:root:04Mar2013,10:36: message queued.
+INFO:root:04Mar2013,10:36: dequeue: {"message": "Order does not exist", "id": 1362364607.561916, "number": "09186709817"}
+INFO:root:04Mar2013,10:36: sending....
+INFO:root:04Mar2013,10:36: sent msg#: 1362364607.56
+INFO:root:04Mar2013,10:37 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads info 81', 'sender': '09186709817', 'time': 1362364633.0}.
+INFO:root:04Mar2013,10:37: message queued.
+INFO:root:04Mar2013,10:37: dequeue: {"message": "Mon Mar  4 10:37:17 2013 \nOrder#: 81\nbalance: 483.6\ndue date: Unclaimed", "id": 1362364637.060337, "number": "09186709817"}
+INFO:root:04Mar2013,10:37: sending....
+INFO:root:04Mar2013,10:37: sent msg#: 1362364637.06
+INFO:root:04Mar2013,10:38 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 15', 'sender': '09186709817', 'time': 1362364695.0}.
+INFO:root:04Mar2013,10:38: message queued.
+INFO:root:04Mar2013,10:38: dequeue: {"message": "Stock #15 has only 5 item/s left.", "id": 1362364698.702969, "number": "09186709817"}
+INFO:root:04Mar2013,10:38: sending....
+INFO:root:04Mar2013,10:38: sent msg#: 1362364698.7
+INFO:root:04Mar2013,10:38 recv msg: {'status': 'REC UNREAD', 'index': 0, 'message': 'ads stock 600', 'sender': '09186709817', 'time': 1362364730.0}.
+INFO:root:04Mar2013,10:38: message queued.
+INFO:root:04Mar2013,10:38: dequeue: {"message": "Stock #600 has only 30 item/s left.", "id": 1362364734.009185, "number": "09186709817"}
+INFO:root:04Mar2013,10:38: sending....
+INFO:root:04Mar2013,10:38: sent msg#: 1362364734.01
